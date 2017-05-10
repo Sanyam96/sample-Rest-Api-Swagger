@@ -13,7 +13,7 @@ public class ApacheResponse {
         this.content = content;
     }
 
-    public ApacheResponse(){};
+    public ApacheResponse(){}
 
     public long getId() {
         return id;

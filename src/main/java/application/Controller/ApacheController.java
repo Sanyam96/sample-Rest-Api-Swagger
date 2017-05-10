@@ -1,9 +1,7 @@
 package application.Controller;
 
 import application.Responses.ApacheResponse;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -23,13 +21,13 @@ public class ApacheController {
                 String.format(template, name));
     }
 
-//    @RequestMapping(method = RequestMethod.POST, value = "data")
-//    public Greeting saveData(
-//            @RequestBody Greeting greeting
-//    ) {
-//        return new Greeting(greeting.getId(), "Sanyam");
-//    }
 
+    @RequestMapping(method = RequestMethod.POST, value = "data")
+    public ApacheResponse saveData(
+            @RequestBody ApacheResponse gsoc
+    ) {
+        return new ApacheResponse(gsoc.getId(), "Sanyam");
+    }
 
 
 }
