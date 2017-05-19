@@ -38,8 +38,8 @@ public class SwaggerConfig {
 
     private ApiInfo metadata() {
         return new ApiInfoBuilder()
-                .title("My awesome API for testing APACHE GSOC'17")
-                .description("Fineract Api Documentation")
+                .title("My awesome API for testing swagger on spring GSOC'17")
+                .description("Api Documentation")
                 .version("1.0")
                 .contact("sanyam.bvcoe96@gmail.com | Github: sanyam96")
                 .build();
